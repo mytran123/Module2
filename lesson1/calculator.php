@@ -11,10 +11,10 @@
         <input type="number" name="first_operand" size="30"  placeholder="First operand" />
         <input type="text">
         <select name="operator">
-            <option name="choose" value="add">+</option>
-            <option name="choose" value="subtract">-</option>
-            <option name="choose" value="times">*</option>
-            <option name="choose" value="divide">/</option>
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="times">*</option>
+            <option value="divide">/</option>
         </select>
 <!--        <input type="select" name="operator" size="30" placeholder="Operator" />-->
         <input type="number" name="second_operand" size="30" placeholder="Second operand" />
@@ -26,15 +26,16 @@
 <?php
     $first = $_POST["first_operand"];
     $second = $_POST["second_operand"];
-    if($_POST['choose'] == add) {
-    echo "$first + $second";
+    if($_POST['operator'] == add) {
+        echo "$first + $second";
     }
-    else if($_POST['choose'] == subtract) {
-    echo "$first - $second";
+    else if($_POST['operator'] == subtract) {
+        echo "$first - $second";
     }
-    else if($_POST['choose'] == times) {
-    echo "$first * $second";
+    else if($_POST['operator'] == times) {
+        echo "$first * $second";
     }
-    else echo "$first / $second";
+    else if($_POST['operator'] == divide) {
+        echo "$first / $second";
     }
 ?>
