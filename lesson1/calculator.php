@@ -14,7 +14,7 @@
             <option name="choose" value="add">+</option>
             <option name="choose" value="subtract">-</option>
             <option name="choose" value="times">*</option>
-            <option name="choose" value="division">/</option>
+            <option name="choose" value="divide">/</option>
         </select>
 <!--        <input type="select" name="operator" size="30" placeholder="Operator" />-->
         <input type="number" name="second_operand" size="30" placeholder="Second operand" />
@@ -24,17 +24,17 @@
 </body>
 </html>
 <?php
-    $sothunhat = $_POST["first_operand"];
-    $sothuhai = $_POST["second_operand"];
+    $first = $_POST["first_operand"];
+    $second = $_POST["second_operand"];
     if($_POST['choose'] == add) {
-    echo "$sothunhat + $sothuhai";
+    echo "$first + $second";
     }
     else if($_POST['choose'] == subtract) {
-    echo "$sothunhat - $sothuhai";
+    echo "$first - $second";
     }
     else if($_POST['choose'] == times) {
-    echo "$sothunhat * $sothuhai";
+    echo "$first * $second";
     }
-    else echo "$sothunhat / $sothuhai";
+    else echo "$first / $second";
     }
 ?>
