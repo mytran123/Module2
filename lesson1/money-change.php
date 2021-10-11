@@ -25,14 +25,12 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["money"])) {
-        readNumber($_POST["money"]);
+        changeNumber($_POST["money"]);
     }
 }
 
 function changeNumber() {
-    $moneyEnter = ;
     if (select1 == select2) {
-        echo
     }
 }
 
