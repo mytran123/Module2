@@ -26,6 +26,8 @@ function readNumber($number) {
         echo numberOneDigit($number);
     } else if ($number < 100) {
         echo numberTwoDigit($number);
+    } else if ($number < 1000) {
+        echo numberThreeDigit($number);
     }
 }
 
@@ -47,10 +49,12 @@ function numberTwoDigit($number) {
 }
 
 function numberThreeDigit($number) {
-    $ar = [1 => "one hundred",2 => "two hundred",3 => "three hundred",4 => "four hundred",5 => "five hundred",6 => "six hundred",7 => "seven hundred",8 => "eight hundred",9 => "nine hundred"];
-    if ($number % 100) {
-        return $ar[$number[0]];
-    } else if ($number) {
+    $arr = ["zero","one","two","three","four","five","six","seven","eight","nine","ten"];
+    if ($number % 100 == 0) {
+        return $arr[$number[0]." hundred"];
+    } else if ($number[1] == 0) {
+        return arr[$number[0]]. " hundred and ".numberOneDigit($number[2]);
+    } else {
 
     }
 }
