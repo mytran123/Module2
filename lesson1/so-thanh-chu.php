@@ -55,7 +55,8 @@ function numberThreeDigit($number) {
     } else if ($number[1] == 0) {
         return arr[$number[0]]. " hundred and ".numberOneDigit($number[2]);
     } else {
-
+        $twoDigit = $number[1].$number[2];
+        return arr[$number[0]]. " hundred ". numberTwoDigit($twoDigit);
     }
 }
 
