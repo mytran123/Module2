@@ -1,0 +1,16 @@
+[
+  {
+    "firstName": "Vũ",
+    "lastName": "Hoàng",
+    "birthDate": "31/04/2000",
+    "address": "Hà Nội",
+    "jobTitle": "Giám đốc"
+  },
+  {
+    "firstName": "Nguyễn",
+    "lastName": "Anh",
+    "birthDate": "12/12/2004",
+    "address": "Bắc Ninh",
+    "jobTitle": "Chủ Tịch"
+  }
+]
