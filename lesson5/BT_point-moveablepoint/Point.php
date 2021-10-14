@@ -39,12 +39,11 @@ class Point
 
     public function getXY()
     {
-        $xy = [];
-        return $xy;
+        return $arr = [$this->x,$this->y];
     }
 
     public function toString()
     {
-
+        echo $this->x . " " . $this->y;
     }
 }

@@ -32,5 +32,17 @@ class MoveablePoint extends Point
         $this->ySpeed = $ySpeed;
     }
 
+    public function move()
+    {
+        echo parent::getX() + $this->xSpeed . "<br>";
+        echo parent::getY() + $this->ySpeed . "<br>";
+    }
 
+    public function toString()
+    {
+        parent::toString();
+        echo "<br/>";
+        echo " " . "xSpeed = " . $this->xSpeed . "<br>";
+        echo " " . "ySpeed = " . $this->ySpeed . "<br>";
+    }
 }
