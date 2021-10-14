@@ -1,4 +1,5 @@
 <?php
+include_once "Shape.php";
 include_once "Resizeable.php";
 
 class Rectangle extends Shape implements Resizeable
@@ -51,6 +52,6 @@ class Rectangle extends Shape implements Resizeable
 
     public function getSize()
     {
-        $this->get
+        return $this->getWidth() . "," . $this->getHeight();
     }
 }

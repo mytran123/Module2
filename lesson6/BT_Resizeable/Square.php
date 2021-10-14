@@ -1,4 +1,5 @@
 <?php
+include_once "Rectangle.php";
 include_once "Resizeable.php";
 
 class Square extends Rectangle implements Resizeable
@@ -11,5 +12,10 @@ class Square extends Rectangle implements Resizeable
     public function resize($doublePercent)
     {
         $this->setWidth($doublePercent * $this->getWidth());
+    }
+
+    public function getSize()
+    {
+        return $this->getWidth();
     }
 }
