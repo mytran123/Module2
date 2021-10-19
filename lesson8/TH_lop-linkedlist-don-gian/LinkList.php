@@ -13,6 +13,7 @@ class LinkList
     }
 
     //thêm một node vào đầu
+    //chèn vào vị trí đầu tiên
     public function inserFirst($data)
     {
         //khởi tạo node mới
@@ -30,6 +31,7 @@ class LinkList
     }
 
     //thêm một node vào sau danh sách
+
     public function inserLast($data)
     {
         //kiểm tra nếu danh sách đã tồn tại
